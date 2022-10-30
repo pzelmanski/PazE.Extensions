@@ -1,4 +1,4 @@
-namespace PazExt;
+namespace Extensions;
 
 public static class Dummy
 {

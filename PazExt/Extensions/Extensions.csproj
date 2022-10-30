@@ -8,6 +8,7 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Version>0.1</Version>
+        <RootNamespace>Extensions</RootNamespace>
     </PropertyGroup>
 
 </Project>
