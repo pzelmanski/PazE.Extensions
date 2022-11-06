@@ -16,4 +16,4 @@ RUN dotnet publish "PazExt/Paze.Extensions/Paze.Extensions.csproj" -c Release -o
 RUN dotnet pack "PazExt/Paze.Extensions/Paze.Extensions.csproj" --output nuget-packages --configuration Release
 
 ARG nuget_api_key
-RUN dotnet nuget push "nuget-packages/*.nupkg" --api-key $nuget_api_key --source "https://api.nuget.org/v3/index.json"
+RUN dotnet nuget push "nuget-packages/*.nupkg" --api-key "$nuget_api_key" --source "https://api.nuget.org/v3/index.json"
