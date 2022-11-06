@@ -17,6 +17,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
-        context: .
+        context: /PazExt/.
         build-arg: nuget_api_key=${{ secrets.NUGET_API_KEY }}
         file: PazExt/Dockerfile
