@@ -9,15 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-        steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      - name: Build and push
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          file: ./PazExt/Dockerfile
-          build-args: nuget_api_key=${{ secrets.NUGET_API_KEY }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Docker build
+      run: docker build . --build-arg nuget-api-key=${{ secrets.NUGET_API_KEY }}
