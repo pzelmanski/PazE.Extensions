@@ -7,14 +7,11 @@
         <Nullable>enable</Nullable>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.1.1</Version>
+        <Version>0.1.2</Version>
         <RootNamespace>Extensions</RootNamespace>
         <PackageProjectUrl>https://github.com/pzelmanski/PazE.Extensions</PackageProjectUrl>
         <RepositoryUrl>https://github.com/pzelmanski/PazE.Extensions</RepositoryUrl>
-        <PackageReleaseNotes>
-            1. Added more detailed informations to nuget
-            2. Does it work multiline?
-        </PackageReleaseNotes>
+        <PackageReleaseNotes>None</PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
 
