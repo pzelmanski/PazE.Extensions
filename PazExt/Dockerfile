@@ -6,8 +6,8 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR "/src"
 COPY . .
 
-RUN dotnet restore "Paze.Extensions\Paze.Extensions.csproj"
-RUN dotnet build "Paze.Extensions\Paze.Extensions.csproj" -c Release --no-restore -o /app/build
+# RUN dotnet restore "Paze.Extensions\Paze.Extensions.csproj"
+RUN dotnet build "Paze.Extensions\Paze.Extensions.csproj" -c Release -o /app/build
 
 FROM build AS publish
 
