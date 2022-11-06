@@ -14,9 +14,9 @@ jobs:
       uses: actions/checkout@v3
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
-    - name: Build and push
+    - name: Docker run
       uses: docker/build-push-action@v3
       with:
-        context: /PazExt/.
-        build-arg: nuget_api_key=${{ secrets.NUGET_API_KEY }}
+#         context: .
+        build-args: nuget_api_key=${{ secrets.NUGET_API_KEY }}
         file: PazExt/Dockerfile
