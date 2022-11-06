@@ -17,6 +17,5 @@ jobs:
     - name: Docker run
       uses: docker/build-push-action@v3
       with:
-#         context: .
         build-args: nuget_api_key=${{ secrets.NUGET_API_KEY }}
-        file: PazExt/Dockerfile
+        file: Dockerfile
