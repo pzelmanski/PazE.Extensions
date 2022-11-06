@@ -16,7 +16,6 @@
             2. Does it work multiline?
         </PackageReleaseNotes>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <PackageId>PazE.Extensions</PackageId>
     </PropertyGroup>
 
 </Project>
