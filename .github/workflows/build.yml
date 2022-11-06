@@ -13,11 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-          dotnet-version: '6.0.x'
-    - name: Install dependencies
-      run: dotnet restore PazExt/Paze.Extensions/Paze.Extensions.csproj
-    - name: Build
-      run: dotnet build PazExt/Paze.Extensions/Paze.Extensions.csproj --configuration Release --no-restore
+    - name: Docker build
+      run: docker build . --build-arg nuget-api-key=${{ secrets.NUGET_API_KEY }}
